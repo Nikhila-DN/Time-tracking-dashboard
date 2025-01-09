@@ -1,0 +1,208 @@
+.main-contents {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space1);
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+
+  @media screen and (min-width: $bp-medium) {
+    grid-template-columns: 1fr 1fr;
+    max-width: $bp-medium;
+  }
+
+  @media screen and (min-width: $bp-large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: $bp-large;
+  }
+
+  .profile {
+    background-color: var(--dark-blue);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @media screen and (min-width: $bp-medium) {
+      grid-column: 1 /-1;
+    }
+
+    @media screen and (min-width: $bp-large) {
+      grid-column: 1 / 2;
+      grid-row: 1 / span 2;
+    }
+
+    .profile__uppper {
+      background-color: var(--blue);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      padding: var(--space1);
+      height: 100%;
+
+      @media screen and (min-width: $bp-large) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: var(--space1);
+      }
+
+      &__image-wrapper {
+        max-width: 4.5rem;
+        margin-right: 0.8rem;
+        border: 3px solid white;
+        border-radius: 50%;
+      }
+
+      h1 {
+        font-size: 1rem;
+        font-weight: 300;
+
+        span {
+          display: block;
+          font-size: 1.2rem;
+          color: var(--white);
+
+          @media screen and (min-width: $bp-large) {
+            width: 60%;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space1);
+
+      @media screen and (min-width: $bp-large) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .btn {
+        background-color: transparent;
+        border: none;
+        color: var(--desaturated-blue);
+        cursor: pointer;
+
+        &:hover {
+          color: var(--white);
+        }
+      }
+
+      .btn-active {
+        color: var(--white);
+      }
+    }
+  }
+
+  .report {
+    border-radius: var(--radius);
+    padding-top: 2.5rem;
+
+    background-repeat: no-repeat;
+    background-position: top -0.5rem right 5%;
+    height: 100%;
+    transition: padding 0.3s ease;
+
+    // &:hover {
+    //   padding-top: 1.5rem;
+    // }
+
+    &__content {
+      background-color: var(--dark-blue);
+      border-radius: var(--radius);
+      // removes the visibility of the background in the corders
+      transform: translateY(1px);
+      padding: var(--space1);
+      cursor: pointer;
+      transition: background 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+
+      &:hover {
+        background-color: var(--dark-blue-pale);
+      }
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__title {
+          font-size: 1rem;
+          font-weight: 500;
+          color: var(--white);
+        }
+
+        img {
+          padding: 0.5rem 0;
+          width: 1.5rem;
+
+          &:hover {
+            filter: brightness(200%);
+          }
+        }
+      }
+
+      &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (min-width: $bp-medium) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        &__hours {
+          color: var(--white);
+          font-size: 1.5rem;
+          font-weight: 300;
+
+          @media screen and (min-width: $bp-medium) {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .work {
+    background-color: var(--light-orange-red);
+    background-image: url(../images/icon-work.svg);
+  }
+
+  .play {
+    background-color: var(--soft-blue);
+    background-image: url(../images/icon-play.svg);
+  }
+
+  .study {
+    background-color: var(--light-red);
+    background-image: url(../images/icon-study.svg);
+  }
+
+  .exercise {
+    background-color: var(--lime-green);
+    background-image: url(../images/icon-exercise.svg);
+  }
+
+  .social {
+    background-color: var(--violet);
+    background-image: url(../images/icon-social.svg);
+  }
+
+  .self-care {
+    background-color: var(--soft-orange);
+    background-image: url(../images/icon-self-care.svg);
+  }
+}

@@ -1,0 +1,50 @@
+:root {
+  // Primary
+  --blue: hsl(246, 80%, 60%);
+  --light-orange-red: hsl(15, 100%, 70%); //(work)
+  --soft-blue: hsl(195, 74%, 62%); //(play)
+  --light-red: hsl(348, 100%, 68%); //(study)
+  --lime-green: hsl(145, 58%, 55%); //(exercise)
+  --violet: hsl(264, 64%, 52%); // (social)
+  --soft-orange: hsl(43, 84%, 65%); //(self care)
+
+  // Neutral
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --dark-blue-pale: hsl(236, 39%, 34%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+  --white: white;
+  --radius: 10px;
+  --space1: 1.5rem;
+}
+
+$bp-small: 300px;
+$bp-medium: 500px;
+$bp-large: 1000px;
+
+html {
+  font-size: 16px;
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $bp-large) {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--space1);
+  background-color: var(--very-dark-blue);
+  color: var(--pale-blue);
+}
+
+.main-contents {
+  margin: auto;
+}

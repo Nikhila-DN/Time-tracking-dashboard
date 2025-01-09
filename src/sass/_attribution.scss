@@ -1,0 +1,38 @@
+.attribution-wrapper {
+  padding: 1rem;
+  margin-top: 1rem;
+
+  .attribution {
+    margin: auto;
+    --fs-attb: calc(1rem - 2px);
+    text-align: center ;
+    line-height: 1.4;
+    font-size: var(--fs-attb);
+    margin: auto;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media screen and (min-width: 375px) {
+      flex-direction: row;
+    }
+
+    .attb-link {
+      color: var(--soft-orange);
+      padding: 0 5px;
+      font-size: calc(var(--fs-attb) + 4px);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: var(--clr-attb-secondary);
+      }
+    }
+
+    .attb-fem {
+      font-size: calc(var(--fs-attb) / 1.1);
+    }
+  }
+}
