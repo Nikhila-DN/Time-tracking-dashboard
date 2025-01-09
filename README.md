@@ -47,7 +47,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [@CodeWithAlamin]([https://www.frontendmentor.io/profile/Nikhila-DN])
+- [@CodeWithAlamin](https://youtu.be/4NmP-O828xA?si=-40gvXDo1gn2IEaQ)
 
 ## Author
 
