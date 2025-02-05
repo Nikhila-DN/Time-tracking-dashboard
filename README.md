@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Nikhila-DN/Time-tracking-dashboard.git
-- Live Site URL: https://mellow-sundae-05ce6f.netlify.app/
+- Live Site URL: https://time-tracking-dashboard-dn.netlify.app/
 
 ## My process
 
